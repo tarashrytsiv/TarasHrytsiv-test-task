@@ -104,9 +104,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "TarasHrytsiv-test-task"
+  "defaultProject": "TarasHrytsiv-test-task",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
